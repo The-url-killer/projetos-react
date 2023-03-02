@@ -1,0 +1,32 @@
+$space-size: 100%;
+
+.t-world {
+  height: 100%;
+  width: 100%;
+
+  background-image: url(./ui/resources/images/citys/pallet-town.png);
+  background-size: contain;
+
+  display: grid;
+  grid-template-columns: repeat(20, 10vh);
+
+  &__space {
+    width: 10vh;
+    height: 10vh;
+
+    position: relative;
+  }
+
+  &__user {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+
+    width: 60%;
+
+    left: 20%;
+    right: 20%;
+    bottom: 10%;
+  }
+}
